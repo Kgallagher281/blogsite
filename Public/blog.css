@@ -1,4 +1,4 @@
-nav {
+.home {
 	text-align: center;
 	color: white;
 	border-width: 5px;
@@ -10,11 +10,11 @@ nav {
 
 }
 
-img{
+.home img{
 float: left;
 }
 
-h2{
+.sign h2{
 	color: #FFFFFF;
 }
  .facebook {
@@ -60,6 +60,6 @@ button{
 
 }
 
-body{
+.all{
 	background-color: #414141;
 }
