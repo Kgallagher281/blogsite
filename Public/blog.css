@@ -63,3 +63,14 @@ button{
 body{
 	background-color: #414141;
 }
+
+/*start of Joan's code*/
+
+
+.main_nav{
+
+	width: 100px;
+	height: 100%;
+	position: fixed;
+	
+}
