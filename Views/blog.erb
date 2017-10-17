@@ -1,11 +1,15 @@
 <body class="all">
 
+
 <link rel="stylesheet" href="blog.css">
+<form method="POST" action="/signin">
 <div class="login">
  	 <input placeholder="Email or Phone" name="email" />
 	 <input placeholder="Password" name="password" />
 	 <input type="submit" />
 </div>
+</form>
+
 
 <nav class="home">
 	<img src="images/BlogHubcomplete.png" style="height: 100px">
@@ -17,8 +21,8 @@
 </div>
 
 
-
-	<form class="facebook">
+		
+<form class="facebook" method="POST" action="/signup">
 		<h2 class="sign" style="font-size: 30px;">Sign up Now</h2><br>
     	<input placeholder="First Name" name="first" />
     	<input placeholder="Last Name" name="last" />
