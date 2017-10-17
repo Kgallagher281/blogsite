@@ -27,6 +27,7 @@ end
 		t.string :user_id
 		t.string :about_me
 		t.string :birth
+		t.string :post
 		t.img :profile_img
 		end
 	end
