@@ -7,16 +7,25 @@
 	width: 100%;
 	background-color: #39749E;
 	height: 100px;
+	padding-top: 10px;
 
 }
 
 .home img{
 float: left;
+padding-left: 20px;
 }
 
 .sign h2{
 	color: #FFFFFF;
+	
 }
+
+.sign{
+	text-align: left;
+	color: #FFFFFF;
+}
+
  .facebook {
     display: grid;
     width: 300px;
@@ -32,6 +41,12 @@ float: left;
 }
 .facebook input[type=submit] {
     grid-column: 2;
+}
+.facebook{
+	float: left;
+	padding-top: 100px;
+	padding-left: 300px;
+	
 }
 
 .login{
@@ -54,23 +69,23 @@ float: left;
 	grid-row: 1;
 }
 
-button{
-	background-color: black;
-	color: white;
-
-}
 
 .all{
 	background-color: #414141;
 }
 
-/*start of Joan's code*/
 
 
-.main_nav{
-
-	width: 100px;
-	height: 100%;
-	position: fixed;
-	
+.info{
+	color: #FFFFFF;
+	text-align: center;
 }
+
+.content p{
+	color: #FFFFFF;
+	font-size: 20px;
+	text-align: right;
+	
+
+}
+
