@@ -1,0 +1,65 @@
+nav {
+	text-align: center;
+	color: white;
+	border-width: 5px;
+	border-style: solid;
+	color: #FFFFFF;
+	width: 100%;
+	background-color: #39749E;
+	height: 100px;
+
+}
+
+img{
+float: left;
+}
+
+h2{
+	color: #FFFFFF;
+}
+ .facebook {
+    display: grid;
+    width: 300px;
+    grid-gap: 8px;
+    grid-template-columns: 1fr 1fr;
+}
+.facebook * {
+    font-size: 15px;
+}
+.facebook input[name=email],
+.facebook input[name=password] { 
+    grid-column: 1 / 2 span;
+}
+.facebook input[type=submit] {
+    grid-column: 2;
+}
+
+.login{
+	color: white;
+	float: right;
+	display: grid;
+	grid-template-rows: 2fr 2fr;
+	grid-gap: 10px;
+	grid-auto-flow: column;
+	height: 50px;
+}
+
+		
+.login input{
+	grid-row: 2;
+
+}
+
+.login label{
+	grid-row: 1;
+}
+
+button{
+	background-color: black;
+	color: white;
+
+}
+
+body{
+	background-color: #414141;
+}
