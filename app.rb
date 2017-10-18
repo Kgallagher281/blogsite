@@ -4,6 +4,7 @@ require 'sinatra/flash'
 require './models'
 
 set :database, {adapter: 'sqlite3', database: 'blogsite.sqlite3'}
+
 # before do
 # 	current_user
 

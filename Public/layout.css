@@ -65,7 +65,7 @@ li a:hover {
 
 .feed{ 
 	 height: 500px;
-	 width: 700px;
+	 width: 50%;
 	 border-style: solid;
 	 border-color: white ;
 	 
@@ -73,7 +73,7 @@ li a:hover {
 	 float:left;
 	 margin-top: 63px;
 	 background: white;
-border-radius: 10px;
+	 border-radius: 10px;
 
  }
 
@@ -91,10 +91,10 @@ border-radius: 10px;
  	border-radius: 10px;
  }
  .search img {
- width: 100px;
- height: 50px;
- padding-left: 10px;
- border-radius: 10px;
+ 	width: 100px;
+ 	height: 50px;
+ 	padding-left: 10px;
+ 	border-radius: 10px;
 
  }
  .textarea{
@@ -105,14 +105,14 @@ border-radius: 10px;
 
  .following{
 
-height:500px;
-width: 300px;
-border:solid;
-float: left;
-margin-top: 63px;
-margin-left: 18px;
-background: white;
-border-radius: 10px;
+	height:500px;
+	width: 300px;
+	border:solid;
+	float: left;
+	margin-top: 63px;
+	margin-left: 18px;
+	background: white;
+	border-radius: 10px;
 
  }
 
@@ -144,9 +144,8 @@ border-radius: 10px;
 
 
 .profile {
-	
-	float: left;
 
+	float: left;
 	width: 200px;
 	display: inline-block;
 }
