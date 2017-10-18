@@ -1,5 +1,5 @@
 User.create([
-{id: 1, first: 'Joan', last: 'borbon', email: 'jborbon@livemail.com', password: "test"},
+{id: 1, first: 'Joan', last: 'borbon', email: 'jborbon@live.com', password: "test"},
 {id: 2, first: 'Kevin', last: 'Gallagher', email: 'Kevin.gallagher23@gmail.com', password: "test"},
 {id: 3, first: 'Boony', last: 'Guzman', email: 'josueguzman89@gmail.com', password: "test"},
 {id: 4, first: 'Cam', last: 'Crews', email: 'CCrews@gmail.com', password: "test"}
