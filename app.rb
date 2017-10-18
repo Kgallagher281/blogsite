@@ -18,9 +18,9 @@ get '/' do
   erb :blog
 end
 
-get '/post' do
-	erb :post
-end
+get'/reviews' do
+	erb :reviews
+end 
 
 get '/editaccount' do
 	erb :editaccount
