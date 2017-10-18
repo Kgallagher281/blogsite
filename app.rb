@@ -63,6 +63,7 @@ post '/profile' do
 	redirect back
 end
 
+
 get "/profile" do
     erb :profile
 end
@@ -76,6 +77,7 @@ post "/profile/update" do
         )
     redirect'/profile'
  end
+
 
 
 def current_user
