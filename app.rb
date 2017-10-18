@@ -22,8 +22,8 @@ get '/post' do
 	erb :post
 end
 
-get '/account' do
-	erb :account
+get '/editaccount' do
+	erb :editaccount
 end
 
 get '/signout' do
@@ -50,7 +50,7 @@ end
 end
 
 
-post '/account' do
+post '/editaccount' do
 user = User.create(email: params[:email], first: params[:first], last: params[:last], password: params[:password])
 	session[:user_id] = user.id
 	redirect '/account'
@@ -62,6 +62,21 @@ post '/profile' do
 	Profile.create(group: params[:group], position: params[:position], birth: params[:birth], about_me: params[:about_me], 	user_id: @current_user.id)
 	redirect back
 end
+
+
+get "/profile" do
+    erb :profile
+end
+post "/profile/update" do
+    @profile = @current_user.profile  
+    @profile.update(
+        group: params[:group],
+        position: params[:position],
+        birth: params[:birth],
+        about_me: params[:about_me]
+        )
+    redirect'/profile'
+ end
 
 
 
