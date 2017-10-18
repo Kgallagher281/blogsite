@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
-	has_many :Reviews
+	has_many :reviews
 	has_many :posts
-	has_one :Profile
+	has_one :profile
 	
 end
 
@@ -11,13 +11,13 @@ class Reviews < ActiveRecord::Base
 end
 
 class Profile < ActiveRecord::Base
- has_one :User
+ has_one :user
 
 end
 
 class Post < ActiveRecord::Base
-belongs_to :User
-belongs_to :Profile
-belongs_to :Reviews
+belongs_to :user
+belongs_to :profile
+belongs_to :reviews
 
 end
