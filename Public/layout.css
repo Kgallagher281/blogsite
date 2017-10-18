@@ -170,3 +170,22 @@ li a:hover {
 	font-size: 20px;
 	color: white;	
 }
+
+/*Stary on Kevin Contact Us Code*/
+	.email{
+	text-align: center;
+	background-color: #414141
+	width: 200px;
+	float: left;
+	margin-top: 60px;
+
+ }
+
+ .email form {
+ 	color: white;
+ }
+
+ .info p{
+ 	color: white;
+ 	font-size: 30px;
+ }

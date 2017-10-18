@@ -38,6 +38,11 @@ get '/home' do
 	erb :home
 end
 
+post '/contact' do
+	erb :contact
+	redirect '/home'
+end
+
 post '/home' do
 user = User.find_by(email: params[:email])
 if user && user.password == params[:password]
