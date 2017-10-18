@@ -32,7 +32,7 @@ get '/home' do
 	erb :home
 end
 
-post '/account' do
+post '/home' do
 user = User.find_by(email: params[:email])
 if user && user.password == params[:password]
 	session[:user_id] = user.id
@@ -44,3 +44,4 @@ else flash[:message] = "Wrong username or password"
 end
 
 end
+
