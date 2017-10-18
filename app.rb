@@ -28,13 +28,16 @@ end
 get'/contact' do
 	erb :contact
 end
+get '/home' do
+	erb :home
+end
 
 post '/account' do
 user = User.find_by(email: params[:email])
 if user && user.password == params[:password]
 	session[:user_id] = user.id
 	flash[:message] = "welcome to BlogHub"
-	redirect '/'
+	redirect '/home'
 
 else flash[:message] = "Wrong username or password"
 	redirect back

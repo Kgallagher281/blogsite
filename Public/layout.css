@@ -1,8 +1,14 @@
 /*start of Joan's code*/
+
+/*home.erb////////////////////////////////////*/
 html{
 	background: #414141
 }
+body{
+	margin-left: 220px;
+	;
 
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -29,7 +35,7 @@ li a {
 
 }
 
-/* Change the link color on hover */
+
 li a:hover {
     background-color: #414141;
     color: white;
@@ -39,12 +45,15 @@ li a:hover {
 	background-color: #39749E;
 	overflow: hidden;
 	text-align: center;
+	position: absolute;
 	position: fixed;
+	top:0;
+	left: 0;
 	height: 100%;
-	border-style: solid;
-	position: fixed;
-	border-color: white;
-	border-width: 10px,
+	
+	/*border-radius: 10px;*/
+	border-radius: white;
+	
 }
 .nav_img img {
 	/*padding: 100px;*/
@@ -54,10 +63,75 @@ li a:hover {
 }
 
 
+.feed{ 
+	 height: 500px;
+	 width: 700px;
+	 border-style: solid;
+	 border-color: white ;
+	 
+	 margin:0 auto ;
+	 float:left;
+	 margin-top: 63px;
+	 background: white;
+border-radius: 10px;
+
+ }
+
+ .search{
+ 	border:solid;
+ 	border-color:white;
+ 	height: 52px;
+ 	width: 1020px;
+ 	background: #39749E;
+ 	position: absolute;
+ 	position: fixed;
+ 	top: 0;
+ 	margin-bottom: 10px;
+ 	overflow: hidden;
+ 	border-radius: 10px;
+ }
+ .search img {
+ width: 100px;
+ height: 50px;
+ padding-left: 10px;
+ border-radius: 10px;
+
+ }
+ .textarea{
+ 	border-radius: 10px;
+ 	margin-left: 700px;
+ 	
+ }
+
+ .following{
+
+height:500px;
+width: 300px;
+border:solid;
+float: left;
+margin-top: 63px;
+margin-left: 18px;
+background: white;
+border-radius: 10px;
+
+ }
+
+/*/*Contact.erb ///////////////////////////////////*/
+
+.contact{
+	height: 590px;
+	width: 1050px;
+	border-style: solid;
+	border-color: white;
+	background: white;
+	
+}
 
 
 
 
+
+/*end of Joan's code 
 
 /*end of Joan's code */
 
@@ -84,3 +158,4 @@ li a:hover {
 	float: left;
 	padding-left: 350px;
 }
+
