@@ -27,7 +27,9 @@ get '/editaccount' do
 end
 
 get '/signout' do
+	session[:user_id] = nil
 	erb :signout
+	redirect'/'
 end
 
 get'/contact' do
@@ -51,9 +53,9 @@ end
 
 
 post '/editaccount' do
-user = User.create(email: params[:email], first: params[:first], last: params[:last], password: params[:password])
+	user = User.create(email: params[:email], first: params[:first], last: params[:last], password: params[:password])
 	session[:user_id] = user.id
-	redirect '/account'
+	redirect '/editaccount'
 
 end
 
