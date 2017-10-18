@@ -136,14 +136,14 @@ li a:hover {
 /*end of Joan's code */
 
 
-/*Start of Kevin's Code for Profile Page*/
+/*Start of Kevin's Code for Edit Account Page*/
 
-.profile * {
+.account * {
     font-size: 25px;
 }
 
 
-.profile {
+.account {
 
 	float: left;
 	width: 200px;
@@ -156,3 +156,17 @@ li a:hover {
 
 }
 
+
+/*Sart of Kevin's Code for Profile */
+
+.profile {
+	text-align: center;
+	font-size: 20px;
+	font-color: white;
+}
+
+.profile p {
+	text-align: left;
+	font-size: 20px;
+	color: white;	
+}

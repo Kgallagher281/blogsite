@@ -8,14 +8,14 @@
 </div>
 
 
-<form class="profile"  method="POST" type="hidden" action="/profile/update">
-    	<input placeholder="Group" name="group" />
+<form class="account"  method="POST" type="hidden" action="/profile<%= "/update" if @current_user.profile %>">
+    	<input placeholder="Group" name="group" value="<%= @current_user.profile.group if @current_user.profile %>" />
 		<br></br>
-    	<input placeholder="birthday" name="birth">
+    	<input placeholder="birthday" name="birth" value="<%= @current_user.profile.birth if @current_user.profile %>" />
     	<br></br>
-    	<input placeholder="about_me" name="about_me" />
+    	<input placeholder="about_me" name="about_me" value="<%= @current_user.profile.about_me if @current_user.profile %>" />
     	<br></br>
-    	<input placeholder="position" name="position" />
+    	<input placeholder="position" name="position" value="<%= @current_user.profile.position if @current_user.profile %>" />
     	<br></br>
     	<input type="submit" name="save" />
 </form>
