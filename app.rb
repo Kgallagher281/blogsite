@@ -4,6 +4,10 @@ require 'sinatra/flash'
 require './models'
 
 set :database, {adapter: 'sqlite3', database: 'blogsite.sqlite3'}
+before do
+	current_user
+
+end
 
 get '/' do
   erb :blog
@@ -28,7 +32,7 @@ get '/home' do
 	erb :home
 end
 
-post '/signin' do
+post '/account' do
 user = User.find_by(email: params[:email])
 if user && user.password == params[:password]
 	session[:user_id] = user.id

@@ -132,3 +132,30 @@ border-radius: 10px;
 
 
 /*end of Joan's code 
+
+/*end of Joan's code */
+
+
+/*Start of Kevin's Code for Profile Page*/
+
+.profile * {
+    font-size: 25px;
+}
+
+
+.profile {
+	margin-left: -600px;
+	float: left;
+	padding-top: 200px;
+	padding-right: 300px;
+	width: 400px;
+	display: inline-block;
+}
+
+.pic {
+	height: 600px;
+	width:  600px;
+	float: left;
+	padding-left: 350px;
+}
+
