@@ -18,8 +18,8 @@ get '/' do
   erb :blog
 end
 
-get'/reviews' do
-	erb :reviews
+get'/createposts' do
+	erb :createposts
 end 
 
 get '/editaccount' do
@@ -28,7 +28,6 @@ end
 
 get '/signout' do
 	session[:user_id] = nil
-	erb :signout
 	redirect'/'
 end
 
