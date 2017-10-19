@@ -5,9 +5,9 @@ class User < ActiveRecord::Base
 	
 end
 
-class Reviews < ActiveRecord::Base
+class Review < ActiveRecord::Base
 	has_many :users
-	has_many :posts
+	belongs_to :post
 end
 
 class Profile < ActiveRecord::Base
@@ -16,8 +16,7 @@ class Profile < ActiveRecord::Base
 end
 
 class Post < ActiveRecord::Base
-belongs_to :user
-belongs_to :profile
-belongs_to :reviews
-
+	belongs_to :user
+	belongs_to :profile
+	has_many :reviews
 end

@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20171017154507) do
     t.integer "rating"
     t.integer "user_id"
     t.datetime "created_at"
+    t.integer "post_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 

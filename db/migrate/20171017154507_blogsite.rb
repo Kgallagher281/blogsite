@@ -12,6 +12,7 @@ end
   		t.integer :rating
   		t.references :user, foreign_key: {to_table: :users}, index: true
   		t.datetime :created_at
+  		t.integer :post_id
 end
 
 
