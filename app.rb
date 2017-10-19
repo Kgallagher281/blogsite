@@ -29,6 +29,7 @@ end
 get '/signout' do
 	session[:user_id] = nil
 	redirect'/'
+	erb :signout
 end
 
 get'/contact' do
@@ -42,6 +43,9 @@ post '/contact' do
 	erb :contact
 	redirect '/home'
 end
+
+
+
 
 post '/home' do
 user = User.find_by(email: params[:email])
@@ -69,6 +73,13 @@ post '/profile' do
 	redirect back
 end
 
+post "/createposts" do
+	# params.to_s
+createposts = Createposts.create(genre: params[:genre])
+redirect "/home"
+
+end
+
 get "/profile" do
     erb :profile
 end
@@ -84,9 +95,11 @@ post "/profile/update" do
  end
 
 
+
 def current_user
 	@current_user = User.find(session[:user_id]) if session[:user_id]
 	p "current_user #{@current_user}"
 	@current_user
 end
+
 
