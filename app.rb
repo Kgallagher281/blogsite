@@ -49,16 +49,21 @@ end
 
 post '/home' do
 user = User.find_by(email: params[:email])
-if user && user.password == params[:password]
-	session[:user_id] = user.id
-	flash[:message] = "welcome to BlogHub"
-	redirect '/home'
+	if user && user.password == params[:password]
+		session[:user_id] = user.id
+		flash[:message] = "welcome to BlogHub"
+		redirect '/home'
 
-else flash[:message] = "Wrong username or password"
-	redirect back
-end
+	else flash[:message] = "Wrong username or password"
+		redirect back
+	end
 end
 
+get '/home' do 
+	@users= User.all
+	@posts = Post.all
+	erb :home
+end
 
 post '/editaccount' do
 	user = User.create(email: params[:email], first: params[:first], last: params[:last], password: params[:password])
@@ -75,7 +80,7 @@ end
 
 post "/createposts" do
 	# params.to_s
-createposts = Createposts.create(genre: params[:genre])
+post = Post.create(genre: params[:genre], title: params[:title], body: params[:body], url: params[:url], user_id: @current_user.id)
 redirect "/home"
 
 end
@@ -95,6 +100,18 @@ post "/profile/update" do
  end
 
 
+post '/deleteaccount' do
+	@current_user
+	User.transaction do
+		@current_user.reviews.destroy_all
+		@current_user.posts.each do |post|
+			post.reviews.destroy_all
+		end
+		@current_user.destroy
+		session[:user_id] =nil
+	end
+	redirect'/'
+end
 
 def current_user
 	@current_user = User.find(session[:user_id]) if session[:user_id]

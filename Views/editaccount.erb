@@ -18,5 +18,11 @@
     	<input placeholder="position" name="position" value="<%= @current_user.profile.position if @current_user.profile %>" />
     	<br></br>
     	<input type="submit" name="save" />
+
 </form>
 
+
+<form class= "account" method="POST" action='/deleteaccount'>
+	<!-- <input type="hidden" name="_method" value="delete"> -->
+	<input type="submit" value="Delete Account">
+</form>

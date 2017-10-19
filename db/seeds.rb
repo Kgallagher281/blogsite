@@ -13,13 +13,16 @@ Post.create([
 {genre: "movie", created_at: Date.parse("2000-09-05"), user_id: 4, url: "https://www.youtube.com/watch?v=iloct9dnMxk", title:"The World watcher", body: "all of these videos container amazing content"}
 ])
 
-Reviews.create([
+Review.create([
 {id: 1, body: "this is the worst", created_at: Date.parse("2000-12-05"), user_id: 1, rating: 1},
 {id: 2, body: "this is my favorite movie", created_at: Date.parse("2000-11-05"), user_id: 2, rating: 5},
 {id: 3, body: "So bad it is actually good", created_at: Date.parse("2000-10-05"), user_id: 3, rating: 4},
 {id: 4, body: "Eh not the worst but, not the best", created_at: Date.parse("2000-09-05"), user_id: 4, rating: 0}
 ])
 
+Post.all.each_with_index do |post, i|
+	post.reviews << Review.all[i]
+end
 
 Profile.create([
 {id: 1, group:"Web Desiger", position: "captain", birth: Date.parse("1988-10-05"), about_me: "I am the best", user_id: 1},
