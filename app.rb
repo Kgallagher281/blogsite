@@ -11,7 +11,7 @@ set :database, {adapter: 'sqlite3', database: 'blogsite.sqlite3'}
 end
 
 get '/profile' do
-	erb :profile
+	erb :profile, locals:{user: @current_user}
 end
 
 get '/' do
@@ -36,8 +36,15 @@ get'/contact' do
 	erb :contact
 end
 get '/home' do
+	@users = User.all
 	erb :home
 end
+
+get '/users/:id' do
+	@user = User.find(params[:id])
+	erb :profile, locals: {user: @user}
+end
+
 
 post '/contact' do
 	erb :contact

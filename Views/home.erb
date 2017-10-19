@@ -1,5 +1,5 @@
 <div class="search">
-	<img src="images/Bloghubcomplete.png" width="200" height="120" >
+	<img src="/images/Bloghubcomplete.png" width="200" height="120" >
 	<textarea class="textarea" >Search</textarea>
 
 </div>
@@ -14,8 +14,13 @@
 <% end %>
 	
 </div>
-<div class="following">
-	
-<h3>Following</h3>
+<div class="users">
+	<h3>Users<h3>
+
+<% @users.each do |user| %>
+<p><a href="/users/<%= user.id %>">
+	<%= user.first %></a></p>
+
+<% end %>
 
 </div>

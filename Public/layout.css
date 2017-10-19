@@ -103,19 +103,7 @@ li a:hover {
  	
  }
 
- .following{
-
-	height:500px;
-	width: 300px;
-	border:solid;
-	float: left;
-	margin-top: 63px;
-	margin-left: 18px;
-	background: white;
-	border-radius: 10px;
-
- }
-
+ 
 /*/*Contact.erb ///////////////////////////////////*/
 
 .contact{
@@ -220,4 +208,16 @@ li a:hover {
 	height: 50px;
 	font-size: 20px;
 	margin-left: 850px;
+}
+
+.users{
+	height:500px;
+	width: 300px;
+	border:solid;
+	float: left;
+	margin-top: 63px;
+	margin-left: 18px;
+	background: white;
+	border-radius: 10px;
+
 }
