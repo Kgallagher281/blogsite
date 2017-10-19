@@ -8,8 +8,10 @@
 <h1>feed</h1>
 <p><a href="/profile"><%= @current_user.first + " " +  @current_user.last %></a></p>
 <% @current_user.posts.each do |item| %>
-<p><%=item.title %></p>
-<p><%=item.body %></p>
+<p>Title: <%=item.title %></p>
+<p>Body: <%=item.body %></p>
+<p>Time: <%=item.created_at %></p>
+
 
 <% end %>
 	
