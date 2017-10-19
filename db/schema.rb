@@ -17,6 +17,8 @@ ActiveRecord::Schema.define(version: 20171017154507) do
     t.integer "created_at"
     t.string "user_id"
     t.string "url"
+    t.string "title"
+    t.string "body"
   end
 
   create_table "profiles", force: :cascade do |t|

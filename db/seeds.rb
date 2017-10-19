@@ -7,10 +7,10 @@ User.create([
 
 
 Post.create([
-{genre: "movie", created_at: Date.parse("2000-12-05"), user_id: 1, url: "https://www.youtube.com/watch?v=wvXyhJfLZjU"},
-{genre: "movie", created_at: Date.parse("2000-11-05"), user_id: 2, url: "https://www.youtube.com/watch?v=FJwdp7ueIxc"},
-{genre: "movie", created_at: Date.parse("2000-10-05"), user_id: 3, url: "https://www.youtube.com/watch?v=9O_3aFMahRg"},
-{genre: "movie", created_at: Date.parse("2000-09-05"), user_id: 4, url: "https://www.youtube.com/watch?v=iloct9dnMxk"}
+{genre: "movie", created_at: Date.parse("2000-12-05"), user_id: 1, url: "https://www.youtube.com/watch?v=wvXyhJfLZjU", title:"The World watcher", body: "all of these videos container amazing content"},
+{genre: "movie", created_at: Date.parse("2000-11-05"), user_id: 2, url: "https://www.youtube.com/watch?v=FJwdp7ueIxc", title:"The World watcher", body: "all of these videos container amazing content"},
+{genre: "movie", created_at: Date.parse("2000-10-05"), user_id: 3, url: "https://www.youtube.com/watch?v=9O_3aFMahRg", title:"The World watcher", body: "all of these videos container amazing content"},
+{genre: "movie", created_at: Date.parse("2000-09-05"), user_id: 4, url: "https://www.youtube.com/watch?v=iloct9dnMxk", title:"The World watcher", body: "all of these videos container amazing content"}
 ])
 
 Reviews.create([

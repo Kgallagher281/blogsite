@@ -182,10 +182,16 @@ li a:hover {
  }
 
  .email form {
- 	color: white;
+ 	color: #FFFFFF;
  }
 
+
  .info p{
- 	color: white;
+ 	color: #FFFFFF;
  	font-size: 30px;
+ }
+
+ .conimage{
+ 	margin-top: 200px;
+ 	margin-left: 410px;
  }
