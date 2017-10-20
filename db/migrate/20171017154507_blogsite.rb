@@ -18,7 +18,7 @@ end
 
 	create_table :posts do |t|
 		t.string :genre
-		t.integer :created_at
+		t.datetime :created_at
 		t.string  :user_id
 		t.string :url
 		t.string :title
