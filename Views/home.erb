@@ -15,10 +15,13 @@
 
 <% end %>
 	
-<!-- 	<% @users.each do |user| %>
-	<p><a href="/posts/<%= user.id %>">
-		<%= user.posts.all %></a></p>
-		<% end %> -->
+<% @posts.each do |post| %>
+<p><a href="/profile/<%= post.user_id %>">Test</a></p>
+		<p><%= post.user_id %></p>
+		<p><%= post.genre %></p>
+		<p><%= post.title %></p>
+		<p><%= post.body %></p>
+<% end %> 
 
 </div>
 <div class="users">

@@ -14,6 +14,10 @@ get '/profile' do
 	erb :profile, locals:{user: @current_user}
 end
 
+get '/profile/:id' do
+  @post = Post.all
+end
+
 get '/' do
   erb :blog
 end
@@ -36,6 +40,7 @@ get'/contact' do
 	erb :contact
 end
 get '/home' do
+	@posts = Post.all
 	@users = User.all
 	erb :home
 end
@@ -44,6 +49,7 @@ get '/users/:id' do
 	@user = User.find(params[:id])
 	erb :profile, locals: {user: @user}
 end
+
 
 
 post '/contact' do
