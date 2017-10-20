@@ -12,24 +12,32 @@
 <p>Body: <%=item.body %></p>
 <p>Time: <%=item.created_at.strftime("%B %d, %Y") %></p>
 
-
 <% end %>
 	
 <% @posts.each do |post| %>
-<p><a href="/profile/<%= post.user_id %>">Test</a></p>
-		<p><%= post.user_id %></p>
-		<p><%= post.genre %></p>
-		<p><%= post.title %></p>
-		<p><%= post.body %></p>
+
+<% @users.each do |user| %>
+<p><a href="/users/<%= user.id %>">
+	<%= user.first + " " + user.last %></a></p>
+		<strong><%= post.title %></strong>
+		<br>
+		<%= post.genre %>
+		<br>
+		<%= post.body %>
 <% end %> 
 
+
+	
+
+<% end %>
 </div>
 <div class="users">
 	<h3>Users<h3>
 
 <% @users.each do |user| %>
 <p><a href="/users/<%= user.id %>">
-	<%= user.first %></a></p>
+	<%= user.first + " " + user.last %></a></p>
+	
 
 <% end %>
 

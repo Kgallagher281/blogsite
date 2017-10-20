@@ -48,6 +48,7 @@ end
 get '/users/:id' do
 	@user = User.find(params[:id])
 	erb :profile, locals: {user: @user}
+	
 end
 
 
