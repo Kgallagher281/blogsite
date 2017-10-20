@@ -10,15 +10,15 @@
 <% @current_user.posts.each do |item| %>
 <p>Title: <%=item.title %></p>
 <p>Body: <%=item.body %></p>
-<p>Time: <%=item.created_at.strftime("%B %d, %Y") %></p>
+<p>Time: <%=item.created_at.strftime("%B %d, %Y?") %></p>
 
 <% end %>
 	
 <% @posts.each do |post| %>
 
-<% @users.each do |user| %>
-<p><a href="/users/<%= user.id %>">
-	<%= user.first + " " + user.last %></a></p>
+
+<p><a href="/users/<%= post.user.id %>">
+	<%= post.user.first + " " + post.user.last %></a></p>
 		<strong><%= post.title %></strong>
 		<br>
 		<%= post.genre %>
@@ -26,7 +26,7 @@
 		<%= post.body %>
 		<br>
 		<%=post.created_at.strftime("%B %d, %Y") %></p>
-<% end %> 
+
 
 
 	
