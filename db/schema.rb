@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20171017154507) do
 
   create_table "posts", force: :cascade do |t|
     t.string "genre"
-    t.integer "created_at"
+    t.datetime "created_at"
     t.string "user_id"
     t.string "url"
     t.string "title"
